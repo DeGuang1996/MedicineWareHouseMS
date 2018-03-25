@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="217.0" prefWidth="393.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+fx:controller="cn.edu.scau.cmi.javafx.stage.controller.NewSupplierController">
+   <children>
+      <Button alignment="CENTER" contentDisplay="CENTER" layoutX="153.0" layoutY="128.0" mnemonicParsing="false" onAction="#submit" text="提交">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="supplierName_TF" layoutX="136.0" layoutY="50.0" prefHeight="36.0" prefWidth="216.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </TextField>
+      <Label alignment="CENTER" layoutX="33.0" layoutY="43.0" prefHeight="66.0" prefWidth="103.0" text="供应商：">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

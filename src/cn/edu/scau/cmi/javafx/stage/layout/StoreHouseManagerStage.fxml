@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="652.0" prefWidth="1143.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.scau.cmi.javafx.stage.controller.StoreHouseManagerStageController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="63.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="11.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="580.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <GridPane prefHeight="63.0" prefWidth="1029.0">
+         <children>
+            <Button fx:id="add_bt" alignment="CENTER" maxHeight="-Infinity" mnemonicParsing="false" onAction="#add" text="新增" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <ChoiceBox fx:id="choice" prefHeight="31.0" prefWidth="120.0" />
+            <TextField fx:id="input_tf" onKeyReleased="#input" prefHeight="31.0" prefWidth="151.0" visible="false" GridPane.columnIndex="4">
+               <font>
+                  <Font size="24.0" />
+               </font></TextField>
+            <Label fx:id="input_lb" text="输入：" visible="false" GridPane.columnIndex="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="back_bt" mnemonicParsing="false" onAction="#backToLogin" text="返回菜单" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <TableView fx:id="medicineTableView" editable="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" GridPane.rowIndex="2">
+         <columns>
+            <TableColumn maxWidth="1.7976931348623157E308" prefWidth="36.0" resizable="false" sortable="false" text="id" visible="false" />
+            <TableColumn maxWidth="1.7976931348623157E308" minWidth="0.0" prefWidth="235.0" resizable="false" sortable="false" text="名称" />
+            <TableColumn maxWidth="1.7976931348623157E308" prefWidth="195.0" resizable="false" sortable="false" text="编号" />
+            <TableColumn maxWidth="1.7976931348623157E308" prefWidth="171.0" resizable="false" sortable="false" text="生产商" />
+            <TableColumn maxWidth="1.7976931348623157E308" prefWidth="175.0" resizable="false" sortable="false" text="联系电话" />
+            <TableColumn maxWidth="1.7976931348623157E308" prefWidth="121.0" resizable="false" sortable="false" text="箱子规格" />
+            <TableColumn maxWidth="1.7976931348623157E308" prefWidth="121.0" resizable="false" sortable="false" text="盒子规格" />
+            <TableColumn maxWidth="1.7976931348623157E308" prefWidth="122.0" resizable="false" sortable="false" text="备注" />
+         </columns>
+      </TableView>
+      <TableView fx:id="supplierTableView" editable="true" prefHeight="200.0" prefWidth="200.0" visible="false" GridPane.rowIndex="2">
+        <columns>
+          <TableColumn prefWidth="466.0" sortable="false" text="id" visible="false" />
+            <TableColumn prefWidth="466.0" sortable="false" text="名称" />
+        </columns>
+      </TableView>
+   </children>
+</GridPane>

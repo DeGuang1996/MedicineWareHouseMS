@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane gridLinesVisible="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="278.0" vgap="5.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.scau.cmi.javafx.stage.controller.MenuStageController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Button mnemonicParsing="false" onAction="#medicineTaken" prefHeight="60.0" prefWidth="200.0" text="药品领取" GridPane.rowIndex="1">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#medicineStore" prefHeight="60.0" prefWidth="200.0" text="药品进库" GridPane.rowIndex="2">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      
+      <!--新建的上架功能定义-->
+      <Button mnemonicParsing="false" onAction="#medicinePutaway" prefHeight="60.0" prefWidth="200.0" text="药品上架" GridPane.rowIndex="3">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <!--新建的功能功能结束定义-->
+      
+      
+      <Button mnemonicParsing="false" onAction="#sotreDataManager" prefHeight="60.0" prefWidth="200.0" text="仓库数据管理" GridPane.rowIndex="4">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#QRcode" prefHeight="60.0" prefWidth="200.0" text="二维码生成" GridPane.rowIndex="5">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" onAction="#backToLoading" prefHeight="60.0" prefWidth="200.0" text="返回登陆" GridPane.rowIndex="6">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</GridPane>

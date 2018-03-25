@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="218.0" prefWidth="493.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.scau.cmi.javafx.stage.controller.LoginStageController">
+   <children>
+      <Label fx:id="userName_Lb" layoutX="80.0" layoutY="39.0" prefHeight="65.0" prefWidth="85.0" text="用户名：">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <!--  注册键盘事件，由LoginStageController中的commit方法响应 onKeyReleased="#commit"-->
+      
+      <TextField fx:id="userID_TF" layoutX="165.0" layoutY="50.0" onKeyReleased="#commit" prefHeight="43.0" prefWidth="210.0" />
+      
+      <!--  注册控件事件，由LoginStageController中的Login_OK方法响应 onAction="#Login_OK"-->
+      
+      <Button fx:id="Login_Bt" layoutX="297.0" layoutY="138.0" mnemonicParsing="false" onAction="#Login_OK" prefHeight="43.0" prefWidth="78.0" text="登陆">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Button>
+      
+      
+      <Button fx:id="Quit_Bt" layoutX="166.0" layoutY="139.0" mnemonicParsing="false" onAction="#Quit" prefHeight="43.0" prefWidth="78.0" text="退出">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <RadioButton fx:id="medicineTaken" layoutX="62.0" layoutY="104.0" mnemonicParsing="false" selected="true" text="药品领取" visible="false">
+         <toggleGroup>
+            <ToggleGroup fx:id="workStageGroup" />
+         </toggleGroup>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="medicineStorage" layoutX="175.0" layoutY="104.0" mnemonicParsing="false" text="药品进库" toggleGroup="$workStageGroup" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="medicineStorage1" layoutX="291.0" layoutY="104.0" mnemonicParsing="false" text="仓库数据管理" toggleGroup="$workStageGroup" visible="false">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>

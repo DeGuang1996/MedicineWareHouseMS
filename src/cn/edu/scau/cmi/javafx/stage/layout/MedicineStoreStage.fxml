@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="802.0" prefWidth="1285.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.scau.cmi.javafx.stage.controller.MedicineStoreStageController">
+  <columnConstraints>
+    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="1.7976931348623157E308" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="80.0" minHeight="71.0" prefHeight="75.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="1.7976931348623157E308" minHeight="1.0" prefHeight="5.0" valignment="TOP" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="715.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="tableView" focusTraversable="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="1285.0" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+         <columns>
+            <TableColumn editable="false" maxWidth="1.7976931348623157E308" minWidth="58.0" prefWidth="58.0" resizable="false" sortable="false" style="-fx-alignment: center;" text="序号 " />
+            <TableColumn editable="false" maxWidth="1.7976931348623157E308" minWidth="188.0" prefWidth="254.0" sortable="false" text="药品名称" />
+            <TableColumn editable="false" maxWidth="1.7976931348623157E308" minWidth="182.0" prefWidth="216.0" sortable="false" text="生产商" />
+            <TableColumn editable="false" maxWidth="1.7976931348623157E308" minWidth="85.0" prefWidth="142.0" sortable="false" style="-fx-alignment: center;" text="数量" />
+            <TableColumn editable="false" maxWidth="1.7976931348623157E308" minWidth="98.0" prefWidth="108.0" sortable="false" style="-fx-alignment: center;" text="单位" />
+            <TableColumn editable="false" maxWidth="1.7976931348623157E308" minWidth="55.0" prefWidth="233.0" sortable="false" style="-fx-alignment: center;" text="单价" />
+         </columns>
+      </TableView>
+      <GridPane maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="81.0" prefWidth="1141.0">
+         <children>
+            <Button fx:id="submit_Bt" focusTraversable="false" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#MedicineStoreSubmit" prefHeight="66.0" prefWidth="87.0" text="提交" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button fx:id="clean_BT" focusTraversable="false" mnemonicParsing="false" onAction="#cleanList" prefHeight="64.0" text="清空" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#MedicineStore" prefHeight="66.0" prefWidth="128.0" text="返回菜单" GridPane.columnIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Label text="进库人:" GridPane.columnIndex="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="供应商：" GridPane.columnIndex="5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="输入:" GridPane.columnIndex="7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dataInput_TF" focusTraversable="false" maxWidth="-Infinity" onKeyReleased="#input" prefHeight="51.0" prefWidth="203.0" GridPane.columnIndex="8">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </TextField>
+            <Label fx:id="supplier_lb" GridPane.columnIndex="6">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="pharmacist_lb" GridPane.columnIndex="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="103.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="151.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="83.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="-Infinity" prefWidth="109.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="239.0" minWidth="-Infinity" prefWidth="128.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="271.0" minWidth="-Infinity" prefWidth="240.0" />
+            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="64.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="200.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+      </GridPane>
+      <Label maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1.0" style="-fx-background-color: black;" GridPane.rowIndex="1" />
+   </children>
+</GridPane>

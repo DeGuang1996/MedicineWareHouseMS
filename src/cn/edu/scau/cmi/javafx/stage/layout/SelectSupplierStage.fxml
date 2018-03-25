@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="687.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.scau.cmi.javafx.stage.controller.SelectSupplierStageController">
+   <children>
+      <TableView fx:id="tableView" layoutX="6.0" layoutY="14.0" prefHeight="602.0" prefWidth="401.0">
+        <columns>
+            <TableColumn prefWidth="399.0" text="id" visible="false" />
+          <TableColumn prefWidth="399.0" sortable="false" style="-fx-alignment: center;" text="名称" />
+        </columns>
+      </TableView>
+      <Button layoutX="237.0" layoutY="623.0" mnemonicParsing="false" onAction="#select" prefHeight="61.0" prefWidth="87.0" text="确定">
+         <font>
+            <Font size="24.0" /> 
+         </font>
+      </Button>
+      <Button layoutX="97.0" layoutY="623.0" mnemonicParsing="false" onAction="#addSupplier" prefHeight="61.0" prefWidth="87.0" text="新增">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

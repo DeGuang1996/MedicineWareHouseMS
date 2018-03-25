@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="763.0" prefWidth="464.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cn.edu.scau.cmi.javafx.stage.controller.NewMedicineStageController">
+   <children>
+      <GridPane fx:id="medicineName_Lb" layoutX="14.0" layoutY="14.0" prefHeight="623.0" prefWidth="435.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" maxWidth="243.0" minWidth="10.0" prefWidth="138.0" />
+          <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="398.0" minWidth="10.0" prefWidth="297.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="药品名称：">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="编码：" GridPane.rowIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="生产商：" GridPane.rowIndex="2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="箱子规格：" GridPane.rowIndex="3">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="medicineName" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="260.0" GridPane.columnIndex="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="number" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="company" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="48.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="quantityPerCase" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="phone" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <Label text="电话：" GridPane.rowIndex="5">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="price" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="memo" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="31.0" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+            <Label text="单价：" GridPane.rowIndex="6">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="备注：" GridPane.rowIndex="7">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label text="盒子规格：" GridPane.rowIndex="4">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="quantityPerBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="260.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button fx:id="submit" layoutX="177.0" layoutY="640.0" mnemonicParsing="false" onAction="#submit" prefHeight="48.0" prefWidth="96.0" text="提交">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
